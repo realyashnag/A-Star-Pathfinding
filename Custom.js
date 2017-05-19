@@ -154,7 +154,7 @@ function update_neighbour(node)
   var x = parseInt(node.substr(1,1));
   var y = parseInt(node.substr(2,1));
   //console.log("x = " + x + "  -- y = " + y);
-  var adjacent =[[x+1, y], [x-1,y], [x,y+1], [x,y-1]];
+  var adjacent =[[x+1, y], [x-1,y], [x,y+1], [x,y-1], [x-1,y-1], [x+1, y-1], [x-1, y+1], [x+1, y+1]];
   for (x in adjacent)
   {
     temp = adjacent[x];
