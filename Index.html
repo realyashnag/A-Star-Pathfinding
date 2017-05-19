@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Custom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>User Interface</title>
+</head>
+
+<body>
+    <h1> A * Implementation </h1>
+    <p> Click the boxes and then "Go" </p> <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="box" id="b14" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+        <div class="col-md-3">
+          <div class="box" id="b24" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+        <div class="col-md-3">
+          <div class="box" id="b34" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+        <div class="col-md-3">
+          <div class="box" id="b44" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="box" id="b13" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+        <div class="col-md-3">
+          <div class="box" id="b23" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+        <div class="col-md-3">
+          <div class="box" id="b33" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+        <div class="col-md-3">
+          <div class="box" id="b43" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="box" id="b12" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+        <div class="col-md-3">
+          <div class="box" id="b22" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+        <div class="col-md-3">
+          <div class="box" id="b32" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+        <div class="col-md-3">
+          <div class="box" id="b42" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="box" id="b11" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+        <div class="col-md-3">
+          <div class="box" id="b21" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+        <div class="col-md-3">
+          <div class="box" id="b31" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+        <div class="col-md-3">
+          <div class="box" id="b41" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
+        </div>
+      </div>
+    </div>
+
+    <center><i class="fa fa-play fa-5x" onclick="find_shortest_path()"></i>&emsp;&emsp;&emsp;
+    <i class="fa fa-repeat fa-5x" onclick="reset()"></i></center>
+    <script src="Custom.js"></script>
+</body>
+
+</html>
