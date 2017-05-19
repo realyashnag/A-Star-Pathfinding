@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+h1{
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+	font-size: 300%;
+}
+
+p{
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+	font-size: 150%;
+}
+
+.fa-custom
+{
+  font-size: 7vh;
+  text-align: center;
+}
+
+.play{
+	width: 40vw;
+	height: 60vh;
+	margin: auto;
+  padding: 0px;
+  border: 1px solid #888;
+}
+
+.box{
+	width: 10vw;
+	height: 15vh;
+  border: 1px solid #888;
+  display: inline-block;
+  text-align: center;
+}
