@@ -27,9 +27,37 @@ p{
 }
 
 .box{
-	width: 10vw;
-	height: 15vh;
+	width: 5vw;
+	height: 10vh;
   border: 1px solid #888;
   display: inline-block;
   text-align: center;
+}
+
+#b11 {
+  margin-left: 20vw;
+}
+#b12 {
+  margin-left: 20vw;
+}
+#b13 {
+  margin-left: 20vw;
+}
+#b14 {
+  margin-left: 20vw;
+}
+#b15 {
+  margin-left: 20vw;
+}
+#b16 {
+  margin-left: 20vw;
+}
+#b17 {
+  margin-left: 20vw;
+}
+#b18 {
+  margin-left: 20vw;
+}
+#b19 {
+  margin-left: 20vw;
 }
