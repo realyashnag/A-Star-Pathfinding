@@ -1,6 +1,6 @@
-var max = 4;
+var max = 9;
 var start = "b11"
-var stop = "b44"
+var stop = "b99"
 var open_list = [];         //Open List (node id)
 var closed_list = [];       //Closed list (node id)
 
@@ -107,11 +107,17 @@ function check_if_exists(list, node)        //Checks if a node is present in pas
   }
 }
 
-function compare_node(node1, node2)     //Node-2 is hopeful parent
+function compare_node(node1, node2, diag)     //Node-2 is hopeful parent
 {
+  var increment;
+  if (diag)
+  {
+    increment = 14;
+  }
+  increment = 10;
   var attribute1 = $('#'+ node1).data('h-g-f-parent');
   var attribute2 = $('#'+ node2).data('h-g-f-parent');
-  if (attribute1[2] > attribute2[2] + 10)
+  if (attribute1[2] > attribute2[2] + increment)
   {
     return 1;
   }
@@ -121,8 +127,13 @@ function compare_node(node1, node2)     //Node-2 is hopeful parent
   }
 }
 
-function update_node(node, parent, e)
+function update_node(node, parent, diag, e)
 {
+  var increment=10;
+  if (diag)
+  {
+    increment = 14;
+  }
   var attribute = $('#'+ node).data('h-g-f-parent');
   var attribute_parent = $('#'+ parent).data('h-g-f-parent');
   if (e)                                                            //Enable : First Time Visit, Calculate Heurestic
@@ -131,7 +142,7 @@ function update_node(node, parent, e)
     var y = parseInt(node.substr(2,1));
     attribute[0] =  Math.abs(x-max) + Math.abs(y-max);
   }
-  attribute[1] = attribute_parent[1] + 10;
+  attribute[1] = attribute_parent[1] + increment;
   attribute[2] = attribute[0] + attribute[1];
   attribute[3] = parent;
   $('#'+node).data('h-g-f-parent',attribute);
@@ -158,20 +169,25 @@ function update_neighbour(node)
   for (x in adjacent)
   {
     temp = adjacent[x];
+    diag = 0;
+    if (x>3)
+    {
+      diag=1;
+    }
     console.log("\nX coordinate : " + temp[0] + "  -  Y coordinate : " + temp[1]);
     if (temp[0] <= max && temp[0] > 0 && temp[1] <= max && temp[1] > 0 && check_if_exists(closed_list, "b"+temp[0]+temp[1]) && islocked("b"+temp[0]+temp[1]))
     {
       console.log("\nPassed Out-of-bounds, not-in-closed-list, not-locked");
       if (check_if_exists(open_list, "b"+temp[0]+temp[1]))   //Not Open
       {
-        update_node("b"+temp[0]+temp[1], node, 1); //Update as New
+        update_node("b"+temp[0]+temp[1], node, diag, 1); //Update as New
         add_node(open_list, "b"+temp[0]+temp[1]);
       }
       else                                                    //Open
       {
-        if (compare_node("b"+temp[0]+temp[1], node))  //New Path is better
+        if (compare_node("b"+temp[0]+temp[1], node, diag))  //New Path is better
         {
-          update_node("b"+temp[0]+temp[1], node, 0); //Update as Old
+          update_node("b"+temp[0]+temp[1], node, diag,  0); //Update as Old
           add_node(open_list, "b"+temp[0]+temp[1]);
         }
       }
