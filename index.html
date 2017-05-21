@@ -16,7 +16,22 @@
     <p> Click on the boxes and then &ensp;<i class="fa fa-play fa-1x"></i> </p> <br>
 
     <div class="container">
-     <!-- Row 1 -->
+      <div class="box" id = "unlocked"></div>
+      <div class="box" id = "locked"></div>
+      <div class="box" id = "closed"></div>
+      <div class="box" id = "open"></div>
+      <div class="box" id = "path"></div>
+      <br>
+      <p style="margin-left: 25vw">Unlocked</p>&ensp;
+      <p>Locked</p>&emsp;
+      <p>Clocked</p>&emsp;
+      <p>Open</p>&emsp;&emsp;
+      <p>Path</p>
+    </div>
+
+
+    <div class="container">
+            <!-- Row 1 -->
           <div class="box" id="b19" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
           <div class="box" id="b29" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
@@ -57,7 +72,7 @@
           <div class="box" id="b98" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
           <br>
-                        <!-- Row 3 -->
+            <!-- Row 3 -->
 
           <div class="box" id="b17" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
@@ -78,7 +93,7 @@
           <div class="box" id="b97" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
           <br>
-                        <!-- Row 4 -->
+            <!-- Row 4 -->
 
           <div class="box" id="b16" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
@@ -99,7 +114,7 @@
           <div class="box" id="b96" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
           <br>
-                            <!-- Row 5 -->
+            <!-- Row 5 -->
 
           <div class="box" id="b15" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
@@ -120,7 +135,8 @@
           <div class="box" id="b95" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
           <br>
-                           <!-- Row 6 -->
+            <!-- Row 6 -->
+
 
           <div class="box" id="b14" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
@@ -140,8 +156,9 @@
 
           <div class="box" id="b94" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
+
           <br>
-                                    <!-- Row 7 -->
+            <!-- Row 7 -->
 
           <div class="box" id="b13" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
@@ -162,7 +179,7 @@
           <div class="box" id="b93" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
           <br>
-                                      <!-- Row 8 -->
+            <!-- Row 8 -->
 
           <div class="box" id="b12" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
@@ -183,7 +200,7 @@
           <div class="box" id="b92" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
           <br>
-                              <!-- Row 9 -->
+            <!-- Row 9 -->
 
           <div class="box" id="b11" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
 
@@ -204,8 +221,9 @@
           <div class="box" id="b91" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
     </div>
     <br>
-    <center><i class="fa fa-play fa-5x" onclick="find_shortest_path()"></i>&emsp;&emsp;&emsp;
-    <i class="fa fa-repeat fa-5x" onclick="reset()"></i></center>
+
+    <center><i class="fa fa-play" onclick="find_shortest_path()" style="font-size: 5vw"></i>&emsp;&emsp;&emsp;
+    <i class="fa fa-repeat" onclick="reset()" style="font-size: 5vw"></i></center>
     <script src="Custom.js"></script>
 </body>
 
