@@ -12,6 +12,15 @@ p{
 	font-size: 150%;
 }
 
+.container p
+{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 100%;
+  display: inline-block;
+  text-align: center;
+
+}
+
 .fa-custom
 {
   font-size: 7vh;
@@ -27,37 +36,64 @@ p{
 }
 
 .box{
-	width: 5vw;
-	height: 10vh;
+	width: 4vw;
+	height: 4vw;
   border: 1px solid #888;
   display: inline-block;
   text-align: center;
 }
 
+
+#unlocked
+{
+  margin-left: 25vw;
+  background-color: white;
+}
+
+#locked
+{
+  background-color: grey;
+}
+
+#closed
+{
+  background-color: yellow;
+}
+
+#open
+{
+  background-color: blue;
+}
+
+#path
+{
+  background-color: green;
+}
+
 #b11 {
-  margin-left: 20vw;
+  margin-left: 17vw;
 }
 #b12 {
-  margin-left: 20vw;
+  margin-left: 17vw;
 }
 #b13 {
-  margin-left: 20vw;
+  margin-left: 17vw;
 }
 #b14 {
-  margin-left: 20vw;
+  margin-left: 17vw;
 }
 #b15 {
-  margin-left: 20vw;
+  margin-left: 17vw;
 }
 #b16 {
-  margin-left: 20vw;
+  margin-left: 17vw;
 }
 #b17 {
-  margin-left: 20vw;
+  margin-left: 17vw;
 }
 #b18 {
-  margin-left: 20vw;
+  margin-left: 17vw;
 }
 #b19 {
-  margin-left: 20vw;
+  margin-left: 17vw;
 }
