@@ -1,99 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
-
-h1{
+body {
   font-family: 'Quicksand', sans-serif;
   text-align: center;
-	font-size: 300%;
 }
 
-p{
-  font-family: 'Quicksand', sans-serif;
-  text-align: center;
-	font-size: 150%;
+h1 {
+  font-size: 3em;
 }
 
-.container p
-{
-  font-family: 'Quicksand', sans-serif;
+p {
+  font-size: 150%;
+}
+
+.container p {
   font-size: 100%;
   display: inline-block;
-  text-align: center;
-
 }
 
-.fa-custom
-{
-  font-size: 7vh;
+.fa-custom {
+  font-size: 7vmin;
   text-align: center;
 }
 
-.play{
-	width: 40vw;
-	height: 60vh;
-	margin: auto;
+.play {
+  width: 40vmax;
+  height: 60vmin;
+  margin: auto;
   padding: 0px;
   border: 1px solid #888;
 }
 
-.box{
-	width: 4vw;
-	height: 4vw;
-  border: 1px solid #888;
+.box {
+  width: 4vmax;
+  height: 4vmax;
+  border: 1px solid rgba(8,8,8,0.1);
   display: inline-block;
   text-align: center;
+  vertical-align: top;
 }
 
+.obox {
+    display: inline-block;
+    text-align: center;
+}
 
-#unlocked
-{
-  margin-left: 25vw;
+#unlocked {
   background-color: white;
 }
 
-#locked
-{
+#locked {
   background-color: grey;
 }
 
-#closed
-{
+#closed {
   background-color: yellow;
 }
 
-#open
-{
+#open {
   background-color: blue;
 }
 
-#path
-{
+#path {
   background-color: green;
-}
-
-#b11 {
-  margin-left: 17vw;
-}
-#b12 {
-  margin-left: 17vw;
-}
-#b13 {
-  margin-left: 17vw;
-}
-#b14 {
-  margin-left: 17vw;
-}
-#b15 {
-  margin-left: 17vw;
-}
-#b16 {
-  margin-left: 17vw;
-}
-#b17 {
-  margin-left: 17vw;
-}
-#b18 {
-  margin-left: 17vw;
-}
-#b19 {
-  margin-left: 17vw;
 }
