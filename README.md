@@ -1,6 +1,7 @@
 # A * Algorithm
-Path finding using A * Algorithm  which uses greedy approach to get the shortest
-path from start to finish, avoiding obstacles.
+Finding path using A * Algorithm  which uses greedy approach to get the shortest path from start to finish i.e. from one corner to opposite corner, avoiding obstacles.
 https://hsaygan.github.io/A-Star-Pathfinding/
 
-[![Detailed Requirements](https://cdn.rawgit.com/hsaygan/A-Star-Pathfinding/b5431a48/Screenshot.png)](https://github.com/hsaygan/A-Star-Pathfinding/README.md)
+<p align="center">
+<img src="http://i.imgur.com/Dc9kQ9W.png?1">
+</p>
