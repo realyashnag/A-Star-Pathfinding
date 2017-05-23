@@ -2,229 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="Custom.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <title>User Interface</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="Custom.css">
+	<title>User Interface</title>
 </head>
 
 <body>
-    <h1> A * Implementation </h1>
-    <p> Click on the boxes and then &ensp;<i class="fa fa-play fa-1x"></i> </p> <br>
-
-    <div class="container">
-      <div class="box" id = "unlocked"></div>
-      <div class="box" id = "locked"></div>
-      <div class="box" id = "closed"></div>
-      <div class="box" id = "open"></div>
-      <div class="box" id = "path"></div>
-      <br>
-      <p style="margin-left: 25vw">Unlocked</p>&ensp;
-      <p>Locked</p>&emsp;
-      <p>Clocked</p>&emsp;
-      <p>Open</p>&emsp;&emsp;
-      <p>Path</p>
-    </div>
-
-
-    <div class="container">
-            <!-- Row 1 -->
-          <div class="box" id="b19" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b29" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b39" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b49" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b59" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b69" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b79" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b89" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b99" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <br>
-            <!-- Row 2 -->
-
-          <div class="box" id="b18" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b28" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b38" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b48" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b58" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b68" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b78" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b88" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b98" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <br>
-            <!-- Row 3 -->
-
-          <div class="box" id="b17" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b27" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b37" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b47" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b57" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b67" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b77" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b87" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b97" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <br>
-            <!-- Row 4 -->
-
-          <div class="box" id="b16" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b26" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b36" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b46" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b56" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b66" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b76" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b86" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b96" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <br>
-            <!-- Row 5 -->
-
-          <div class="box" id="b15" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b25" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b35" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b45" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b55" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b65" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b75" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b85" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b95" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <br>
-            <!-- Row 6 -->
-
-
-          <div class="box" id="b14" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b24" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b34" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b44" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b54" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b64" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b74" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b84" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b94" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-
-          <br>
-            <!-- Row 7 -->
-
-          <div class="box" id="b13" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b23" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b33" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b43" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b53" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b63" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b73" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b83" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b93" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <br>
-            <!-- Row 8 -->
-
-          <div class="box" id="b12" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b22" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b32" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b42" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b52" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b62" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b72" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b82" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b92" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <br>
-            <!-- Row 9 -->
-
-          <div class="box" id="b11" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b21" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b31" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b41" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b51" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b61" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b71" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b81" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-
-          <div class="box" id="b91" onclick="update(this.id)" data-h-g-f-parent='[0, 0, 0, null]' data-locked='0'></div>
-    </div>
-    <br>
-
-    <center><i class="fa fa-play" onclick="find_shortest_path()" style="font-size: 5vw"></i>&emsp;&emsp;&emsp;
-    <i class="fa fa-repeat" onclick="reset()" style="font-size: 5vw"></i></center>
-    <script src="Custom.js"></script>
+	<h1> A* Implementation </h1>
+	<p> Click on the boxes and then &ensp;<i class="fa fa-play fa-1x"></i> </p> <br>
+	<div class="container">
+		<div class="obox"><div class="box" id="unlocked"></div><br><p>Unlocked</p>&nbsp;</div>
+		<div class="obox"><div class="box" id="locked"></div><br><p>Locked</p>&nbsp;</div>
+		<div class="obox"><div class="box" id="closed"></div><br><p>Closed</p>&nbsp;</div>
+		<div class="obox"><div class="box" id="open"></div><br><p>Open</p>&nbsp;</div>
+		<div class="obox"><div class="box" id="path"></div><br><p>Path</p>&nbsp;</div>
+		<br>
+	</div>
+	<br>
+	<div class="container"></div>
+	<br>
+	<center>
+		<i class="fa fa-play" onclick="find_shortest_path()" style="font-size: 5vw"></i>&emsp;&emsp;&emsp;
+		<i class="fa fa-repeat" onclick="reset()" style="font-size: 5vw"></i></center>
+	<script src="Custom.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
